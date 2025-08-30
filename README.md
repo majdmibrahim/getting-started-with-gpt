@@ -1,3 +1,5 @@
+/artificial-intelligence/llms-models/gpt-model/
+
 # GPT-Powered Customer Review & Sentiment Analysis
 
 This project demonstrates how to use **OpenAI GPT models** to analyze customer feedback and movie reviews.  
