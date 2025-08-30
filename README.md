@@ -1,17 +1,29 @@
-# Simple GPT Project
+# GPT-Powered Customer Review & Sentiment Analysis
 
-A Python project to experiment with OpenAI GPT.  
-It allows sending queries to the GPT model and receiving responses directly in your console.
+This project demonstrates how to use **OpenAI GPT models** to analyze customer feedback and movie reviews.  
+It combines **topic extraction** from user reviews and **sentiment classification** using the IMDB dataset.
+
+---
 
 ## Features
-- Send prompts to GPT models and get responses.
-- Easy to set up and run.
-- Suitable for learning and experimenting with OpenAI's API.
+- Extracts **main topics** from customer reviews (e.g., "great place", "comfortable stay").
+- Performs **sentiment analysis** (positive/negative) on movie reviews.
+- Uses the **IMDB Dataset of 50K Movie Reviews** from Kaggle.
+- Implements the workflow directly in **Google Colab** with Pandas + OpenAI API.
 
-## Requirements
-- Python 3.8 or higher
-- `openai` library
+---
 
+## Dataset
+We use the IMDB dataset available on Kaggle:  
+👉 [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+
+For Colab integration, the dataset can be uploaded to Google Drive and loaded via:
+```python
+file_id = "1Z_cxXwJN1hgLUu4Hucu76C-xkwAGQmhv"
+csv_file = f"https://drive.google.com/uc?id={file_id}"
+df = pd.read_csv(csv_file)
+
+---
 
 ## Configuration in Google Colab
 Set your OpenAI API key directly in a code cell in Colab:
